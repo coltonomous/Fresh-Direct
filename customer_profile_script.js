@@ -21,7 +21,7 @@ function bindCustomerEditButton(){
     document.getElementById("submitCustomerEdit").addEventListener("click", function(event){
         
         var req = new XMLHttpRequest();
-        var requestURL = "http://flip2.engr.oregonstate.edu:65512/customerEdit/";
+        var requestURL = "https://flip2.engr.oregonstate.edu:65512/customerEdit/";
         
         name = document.getElementById("customerEditFName").value;
         lname = document.getElementById("customerEditLName").value;
