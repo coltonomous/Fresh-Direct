@@ -32,7 +32,7 @@ function updatePage(){
 function showMarketArray(){
     // Shows marketplace items on homepage.
     var req = new XMLHttpRequest();
-    var requestURL = "http://flip2.engr.oregonstate.edu:65512/productRange/";
+    var requestURL = "https://flip2.engr.oregonstate.edu:65512/productRange/";
     var params = {"startId": 1, "endId": 20};  // 1-100 are arbitrary. Should be changed for scalability.
      
     req.open("POST", requestURL, true);
@@ -74,7 +74,7 @@ function showMarketArray(){
 
 function bindAddToCartButton(productId){
     var req = new XMLHttpRequest();
-    var requestURL = "http://flip2.engr.oregonstate.edu:65512/cartAdd/";
+    var requestURL = "https://flip2.engr.oregonstate.edu:65512/cartAdd/";
     var customerId = window.sessionStorage.getItem("id");
     var params = {"customerId": customerId, "productId": productId, "quantity": 1};
     req.open("POST", requestURL, true);
