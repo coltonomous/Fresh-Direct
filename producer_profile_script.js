@@ -19,7 +19,7 @@ function bindProducerEditButton(){
     document.getElementById("submitProducerEdit").addEventListener("click", function(event){
         
         var req = new XMLHttpRequest();
-        var requestURL = "http://flip2.engr.oregonstate.edu:65512/producerEdit/";
+        var requestURL = "https://flip2.engr.oregonstate.edu:65512/producerEdit/";
         
         name = document.getElementById("producerEditName").value;
         email = document.getElementById("producerEditEmail").value;
