@@ -9,7 +9,7 @@ function bindCustomerSignupButton(){
     document.getElementById("submitCustomerSignup").addEventListener("click", function(event){
         
         var req = new XMLHttpRequest();
-        var requestURL = "http://flip2.engr.oregonstate.edu:65512/customerSignup/";
+        var requestURL = "https://flip2.engr.oregonstate.edu:65512/customerSignup/";
         var fname = document.getElementById("customerSignupFName").value; 
         var lname = document.getElementById("customerSignupLName").value; 
         var email = document.getElementById("customerSignupEmail").value; 
@@ -47,7 +47,7 @@ function bindCustomerLoginButton(){
 
 function customerLogin(email, pword){
     var req = new XMLHttpRequest();
-    var requestURL = "http://flip2.engr.oregonstate.edu:65512/customerLogin/";    
+    var requestURL = "https://flip2.engr.oregonstate.edu:65512/customerLogin/";    
     var params = {"email": email, "password": pword};
         
     req.open("POST", requestURL, true);
