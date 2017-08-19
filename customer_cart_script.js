@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", bindCustomerCheckoutButton);
 
 function showCustomerCart(){
     var req = new XMLHttpRequest();
-    var requestURL = "http://flip2.engr.oregonstate.edu:65512/cartView/";
+    var requestURL = "https://flip2.engr.oregonstate.edu:65512/cartView/";
     var customerId = window.sessionStorage.getItem("id");
     var params = {"customerId": customerId};
     
@@ -48,7 +48,7 @@ function bindCustomerCheckoutButton(){
     document.getElementById("submitCustomerCheckout").addEventListener("click", function(event){
         
         var req = new XMLHttpRequest();
-        var requestURL = "http://flip2.engr.oregonstate.edu:65512/cartCheckout/";
+        var requestURL = "https://flip2.engr.oregonstate.edu:65512/cartCheckout/";
         var customerId = window.sessionStorage.getItem("id");
         var params = {"customerId": customerId};
         req.open("POST", requestURL, true);
