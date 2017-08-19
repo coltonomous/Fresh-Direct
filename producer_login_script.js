@@ -9,7 +9,7 @@ function bindProducerSignupButton(){
     document.getElementById("submitProducerSignup").addEventListener("click", function(event){
         
         var req = new XMLHttpRequest();
-        var requestURL = "http://flip2.engr.oregonstate.edu:65512/producerSignup/";
+        var requestURL = "https://flip2.engr.oregonstate.edu:65512/producerSignup/";
         var company_name = document.getElementById("producerSignupCompanyName").value; 
         var email = document.getElementById("producerSignupEmail").value; 
         var pword = document.getElementById("producerSignupPassword").value; 
@@ -46,7 +46,7 @@ function bindProducerLoginButton(){
 
 function producerLogin(email, pword){
     var req = new XMLHttpRequest();
-    var requestURL = "http://flip2.engr.oregonstate.edu:65512/producerLogin/";    
+    var requestURL = "https://flip2.engr.oregonstate.edu:65512/producerLogin/";    
     var params = {"email": email, "password": pword};
         
     req.open("POST", requestURL, true);
